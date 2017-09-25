@@ -21,6 +21,11 @@
             //Creates an image element
             let newSubImg = document.createElement('img');
 
+            newSubImg.dataset.index = index;
+
+            //add an event handler to trigger a lightbox
+            newSubImg.addEventListener('click', popLightbox, false);
+
         //add a css class to it
         newSubImg.classList.add('thumb');
         //Set the source
@@ -51,6 +56,14 @@
         //add handler to each image
         image.addEventListener('click', changeElements, false);
       });
+
+      function popLightbox() {
+        //debugger;
+      //trigger the lightbox overlay so that we can see it
+     let lightbox = document.querySelector('.lightbox');
+
+     lightbox.style.display = 'block';
+     }
 
       //That's gonna call the spring "click" when page loads - 2 possible ways
       //document.querySelector('#spring').click();
