@@ -1,0 +1,21 @@
+body
+{
+  color:white;
+  background-color: black;
+}
+div
+{
+  height: 200px;
+  width:300px;
+}
+#first
+{
+  background-color: purple;
+}
+
+#second
+{
+  background-color: blue;
+  height: 50%;
+  width: 50%;
+}
