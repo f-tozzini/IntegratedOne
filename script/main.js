@@ -20,16 +20,16 @@
         objectIndex.images.forEach(function(image, index) {
             //Creates an image element
             let newSubImg = document.createElement('img');
+            //add a css class to it
+            newSubImg.classList.add('thumb');
+            //Set the source of the image
+            newSubImg.src = "images/" + objectIndex.images[index];
 
             newSubImg.dataset.index = index;
 
             //add an event handler to trigger a lightbox
-            newSubImg.addEventListener('click', popLightbox, false);
+            newSubImg.addEventListener('click', function () { popLightbox(index, objectIndex); }, false);
 
-        //add a css class to it
-        newSubImg.classList.add('thumb');
-        //Set the source
-        newSubImg.src = "images/" + objectIndex.images[index];
         //add it to the page
         subImages.appendChild(newSubImg);
         });
@@ -57,14 +57,29 @@
         image.addEventListener('click', changeElements, false);
       });
 
-      function popLightbox() {
-        //debugger;
+      function popLightbox(currentIndex, currentObject) {
+      //debugger;
+      //move the window to the top every time we click - quick bug fix
+      window.scrollTo(0,0);
+      //dont want the body to run to the bottom - locks everything up
+      document.body.style.overflow = "hidden";
       //trigger the lightbox overlay so that we can see it
-     let lightbox = document.querySelector('.lightbox');
+      let lightbox = document.querySelector('.lightbox');
+      let lightboxImg = lightbox.querySelector('img');
+      let lightboxDesc = lightbox.querySelector('p');
+      let lightboxClose = document.querySelector('.close-lightbox');
 
      lightbox.style.display = 'block';
+     //setting the image source + the next one as clicked
+     lightboxImg.src = "images/" + currentObject.images[currentIndex];
+     lightboxDesc.innerHTML = currentObject.imageDescription[currentIndex];
+     lightboxDesc.addEventListener('click', closeLightbox, false);
      }
 
+     function closeLightbox() {
+       //reset everything, close lightbow
+      debugger;
+     }
       //That's gonna call the spring "click" when page loads - 2 possible ways
       //document.querySelector('#spring').click();
       changeElements.call(document.querySelector('#spring'));
