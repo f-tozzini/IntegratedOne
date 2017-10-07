@@ -78,7 +78,7 @@
 
 //reset everything, close lightbox
      function closeLightbox() {
-       console.log("Close this shit now");
+       console.log("Close lightbox");
        let lightbox = document.querySelector('.lightbox');
        let lightboxImg = lightbox.querySelector('img');
        let lightboxDesc = lightbox.querySelector('p');
