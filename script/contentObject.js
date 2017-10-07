@@ -6,12 +6,20 @@ var dynamicContent = {
 
 			images : [
 				"spring_1.jpg",
-				"spring_2.jpg"
+				"spring_2.jpg",
+				"spring_3.jpg",
+				"spring_4.jpg",
+				"spring_5.jpg",
+				"spring_6.jpg"
 			],
 
 			imageDescription : [
-				"This image has a bunch of butterflies",
-				"PATO!"
+				'Those are butterflies',
+				'This is a baby chicken',
+				'Cute baby goat!',
+				'This is a flower field',
+				'Another flower field',
+				'Flowers in the city'
 			]
 		},
 
@@ -22,7 +30,20 @@ var dynamicContent = {
 
 			images : [
 				"summer_1.jpg",
-				"summer_2.jpg"
+				"summer_2.jpg",
+				"summer_3.jpg",
+				"summer_4.jpg",
+				"summer_5.jpg",
+				"summer_6.jpg"
+			],
+
+			imageDescription : [
+				'Colorful summer chairs!',
+				'Cute puppy',
+				'Summer!',
+				'Beach day',
+				'Reading in the sun',
+				'Vacationing'
 			]
 		},
 
@@ -33,7 +54,20 @@ var dynamicContent = {
 
 			images : [
 				"autumn_1.jpg",
-				"autumn_2.jpg"
+				"autumn_2.jpg",
+				"autumn_3.jpg",
+				"autumn_4.jpg",
+				"autumn_5.jpg",
+				"autumn_6.jpg"
+			],
+
+			imageDescription : [
+				'Autumn leaves',
+				'Pumpkins and sunflowers',
+				'Fall sunshine',
+				'Leaves',
+				'Autumn park',
+				'And a park again'
 			]
 		},
 
@@ -44,7 +78,20 @@ var dynamicContent = {
 
 			images : [
 				"winter_1.jpg",
-				"winter_2.jpg"
+				"winter_2.jpg",
+				"winter_3.jpg",
+				"winter_4.jpg",
+				"winter_5.jpg",
+				"winter_6.jpg"
+			],
+
+			imageDescription : [
+				'Sun and snow',
+				'Very happy snowman',
+				'Sun, snow and trees',
+				'Shiny snow',
+				'More snow',
+				'Aurora borealis'
 			]
 		}
 	};
